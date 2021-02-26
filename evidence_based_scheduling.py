@@ -12,7 +12,7 @@ def estimate(effort, file_path):
     simulations = simulate_from(velocities)
 
     days_required = simulations.ge(effort).idxmax(axis="columns").quantile(0.95)
-    return (date.today() + BDay(1)).date().strftime("%B %d, %Y")
+    return (date.today() + BDay(days_required)).date().strftime("%B %d, %Y")
 
 
 def simulate_from(velocities):
