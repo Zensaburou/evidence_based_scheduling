@@ -6,4 +6,3 @@ def test_load_estimate():
     data = calculate_actual(data)
     data = calculate_velocities(data)
     simulation = simulate_from(data['velocity'])
-    pdb.set_trace()

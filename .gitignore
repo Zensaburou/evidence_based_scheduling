@@ -1,3 +1,3 @@
-./data*
-
-!./data/test.tsv
+/data/*.tsv
+!/data/test.tsv
+!/data/test_predictions.tsv
